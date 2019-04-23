@@ -54,6 +54,7 @@
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.testingRoundingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,53 +65,53 @@
             this.statusMSG = new System.Windows.Forms.ToolStripStatusLabel();
             this.tcMain = new System.Windows.Forms.TabControl();
             this.tpGeneralMerchandise = new System.Windows.Forms.TabPage();
-            this.tpFood = new System.Windows.Forms.TabPage();
-            this.gbRegisterOutput = new System.Windows.Forms.GroupBox();
-            this.tpMedical = new System.Windows.Forms.TabPage();
-            this.tpBooks = new System.Windows.Forms.TabPage();
-            this.tpAdmin = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbItemName = new System.Windows.Forms.TextBox();
-            this.tbCost = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.lbSelectGM = new System.Windows.Forms.Label();
-            this.lvGM = new System.Windows.Forms.ListView();
             this.btnGMToCart = new System.Windows.Forms.Button();
+            this.lvGM = new System.Windows.Forms.ListView();
+            this.lbSelectGM = new System.Windows.Forms.Label();
+            this.tpFood = new System.Windows.Forms.TabPage();
             this.btnAddFoodToCart = new System.Windows.Forms.Button();
             this.lvFood = new System.Windows.Forms.ListView();
             this.label3 = new System.Windows.Forms.Label();
+            this.tpMedical = new System.Windows.Forms.TabPage();
             this.btnAddMedicineToCart = new System.Windows.Forms.Button();
             this.lvMedicine = new System.Windows.Forms.ListView();
             this.label4 = new System.Windows.Forms.Label();
+            this.tpBooks = new System.Windows.Forms.TabPage();
             this.btnAddImportedGoodsToCart = new System.Windows.Forms.Button();
             this.lvBooks = new System.Windows.Forms.ListView();
             this.label5 = new System.Windows.Forms.Label();
-            this.lvRegisterTape = new System.Windows.Forms.ListView();
-            this.rbTaxable = new System.Windows.Forms.RadioButton();
-            this.rbFood = new System.Windows.Forms.RadioButton();
-            this.rbMedical = new System.Windows.Forms.RadioButton();
+            this.tpAdmin = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbImported = new System.Windows.Forms.CheckBox();
             this.rbBooks = new System.Windows.Forms.RadioButton();
+            this.rbMedical = new System.Windows.Forms.RadioButton();
+            this.rbFood = new System.Windows.Forms.RadioButton();
+            this.rbTaxable = new System.Windows.Forms.RadioButton();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbItemName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbCost = new System.Windows.Forms.TextBox();
+            this.gbRegisterOutput = new System.Windows.Forms.GroupBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.lbTotalValue = new System.Windows.Forms.Label();
+            this.lbSalesTaxValue = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbSalesTax = new System.Windows.Forms.Label();
+            this.lvRegisterTape = new System.Windows.Forms.ListView();
             this.cmsGM = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.purchaseItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cbImported = new System.Windows.Forms.CheckBox();
-            this.testingRoundingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lbSalesTax = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lbSalesTaxValue = new System.Windows.Forms.Label();
-            this.lbTotalValue = new System.Windows.Forms.Label();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.cbUseRounding = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.cashRegisterStatusStrip.SuspendLayout();
             this.tcMain.SuspendLayout();
             this.tpGeneralMerchandise.SuspendLayout();
             this.tpFood.SuspendLayout();
-            this.gbRegisterOutput.SuspendLayout();
             this.tpMedical.SuspendLayout();
             this.tpBooks.SuspendLayout();
             this.tpAdmin.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.gbRegisterOutput.SuspendLayout();
             this.cmsGM.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -150,7 +151,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // openToolStripMenuItem
@@ -159,13 +160,13 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -173,19 +174,19 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -193,7 +194,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printToolStripMenuItem.Text = "&Print";
             // 
             // printPreviewToolStripMenuItem
@@ -201,18 +202,18 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -234,20 +235,20 @@
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.undoToolStripMenuItem.Text = "&Undo";
             // 
             // redoToolStripMenuItem
             // 
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.redoToolStripMenuItem.Text = "&Redo";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
             // 
             // cutToolStripMenuItem
             // 
@@ -255,7 +256,7 @@
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.cutToolStripMenuItem.Text = "Cu&t";
             // 
             // copyToolStripMenuItem
@@ -264,7 +265,7 @@
             this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.copyToolStripMenuItem.Text = "&Copy";
             // 
             // pasteToolStripMenuItem
@@ -273,18 +274,18 @@
             this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.pasteToolStripMenuItem.Text = "&Paste";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(141, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.selectAllToolStripMenuItem.Text = "Select &All";
             // 
             // toolsToolStripMenuItem
@@ -309,6 +310,13 @@
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
+            // testingRoundingToolStripMenuItem
+            // 
+            this.testingRoundingToolStripMenuItem.Name = "testingRoundingToolStripMenuItem";
+            this.testingRoundingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.testingRoundingToolStripMenuItem.Text = "Pre-Fill Sample Data";
+            this.testingRoundingToolStripMenuItem.Click += new System.EventHandler(this.LoadEmulatedDataToolStripMenuItem_Click);
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -324,30 +332,30 @@
             // contentsToolStripMenuItem
             // 
             this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.contentsToolStripMenuItem.Text = "&Contents";
             // 
             // indexToolStripMenuItem
             // 
             this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.indexToolStripMenuItem.Text = "&Index";
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.searchToolStripMenuItem.Text = "&Search";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // cashRegisterStatusStrip
@@ -392,6 +400,34 @@
             this.tpGeneralMerchandise.Text = "General Merchandise";
             this.tpGeneralMerchandise.UseVisualStyleBackColor = true;
             // 
+            // btnGMToCart
+            // 
+            this.btnGMToCart.Location = new System.Drawing.Point(589, 29);
+            this.btnGMToCart.Name = "btnGMToCart";
+            this.btnGMToCart.Size = new System.Drawing.Size(75, 23);
+            this.btnGMToCart.TabIndex = 2;
+            this.btnGMToCart.Text = "Add To Cart";
+            this.btnGMToCart.UseVisualStyleBackColor = true;
+            this.btnGMToCart.Click += new System.EventHandler(this.BtnAddGMToCart_Click);
+            // 
+            // lvGM
+            // 
+            this.lvGM.Location = new System.Drawing.Point(20, 30);
+            this.lvGM.MultiSelect = false;
+            this.lvGM.Name = "lvGM";
+            this.lvGM.Size = new System.Drawing.Size(516, 210);
+            this.lvGM.TabIndex = 1;
+            this.lvGM.UseCompatibleStateImageBehavior = false;
+            // 
+            // lbSelectGM
+            // 
+            this.lbSelectGM.AutoSize = true;
+            this.lbSelectGM.Location = new System.Drawing.Point(21, 13);
+            this.lbSelectGM.Name = "lbSelectGM";
+            this.lbSelectGM.Size = new System.Drawing.Size(85, 13);
+            this.lbSelectGM.TabIndex = 0;
+            this.lbSelectGM.Text = "Select Products:";
+            // 
             // tpFood
             // 
             this.tpFood.Controls.Add(this.btnAddFoodToCart);
@@ -405,20 +441,32 @@
             this.tpFood.Text = "Food";
             this.tpFood.UseVisualStyleBackColor = true;
             // 
-            // gbRegisterOutput
+            // btnAddFoodToCart
             // 
-            this.gbRegisterOutput.Controls.Add(this.btnClear);
-            this.gbRegisterOutput.Controls.Add(this.lbTotalValue);
-            this.gbRegisterOutput.Controls.Add(this.lbSalesTaxValue);
-            this.gbRegisterOutput.Controls.Add(this.label7);
-            this.gbRegisterOutput.Controls.Add(this.lbSalesTax);
-            this.gbRegisterOutput.Controls.Add(this.lvRegisterTape);
-            this.gbRegisterOutput.Location = new System.Drawing.Point(951, 41);
-            this.gbRegisterOutput.Name = "gbRegisterOutput";
-            this.gbRegisterOutput.Size = new System.Drawing.Size(363, 384);
-            this.gbRegisterOutput.TabIndex = 3;
-            this.gbRegisterOutput.TabStop = false;
-            this.gbRegisterOutput.Text = "Register Tape";
+            this.btnAddFoodToCart.Location = new System.Drawing.Point(542, 30);
+            this.btnAddFoodToCart.Name = "btnAddFoodToCart";
+            this.btnAddFoodToCart.Size = new System.Drawing.Size(75, 23);
+            this.btnAddFoodToCart.TabIndex = 5;
+            this.btnAddFoodToCart.Text = "Add To Cart";
+            this.btnAddFoodToCart.UseVisualStyleBackColor = true;
+            this.btnAddFoodToCart.Click += new System.EventHandler(this.BtnAddFoodToCart_Click);
+            // 
+            // lvFood
+            // 
+            this.lvFood.Location = new System.Drawing.Point(20, 30);
+            this.lvFood.Name = "lvFood";
+            this.lvFood.Size = new System.Drawing.Size(516, 201);
+            this.lvFood.TabIndex = 4;
+            this.lvFood.UseCompatibleStateImageBehavior = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Select Products:";
             // 
             // tpMedical
             // 
@@ -433,6 +481,33 @@
             this.tpMedical.Text = "Medical";
             this.tpMedical.UseVisualStyleBackColor = true;
             // 
+            // btnAddMedicineToCart
+            // 
+            this.btnAddMedicineToCart.Location = new System.Drawing.Point(601, 28);
+            this.btnAddMedicineToCart.Name = "btnAddMedicineToCart";
+            this.btnAddMedicineToCart.Size = new System.Drawing.Size(75, 23);
+            this.btnAddMedicineToCart.TabIndex = 5;
+            this.btnAddMedicineToCart.Text = "Add To Cart";
+            this.btnAddMedicineToCart.UseVisualStyleBackColor = true;
+            this.btnAddMedicineToCart.Click += new System.EventHandler(this.BtnAddMedicineToCart_Click);
+            // 
+            // lvMedicine
+            // 
+            this.lvMedicine.Location = new System.Drawing.Point(20, 30);
+            this.lvMedicine.Name = "lvMedicine";
+            this.lvMedicine.Size = new System.Drawing.Size(516, 210);
+            this.lvMedicine.TabIndex = 4;
+            this.lvMedicine.UseCompatibleStateImageBehavior = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Select Products:";
+            // 
             // tpBooks
             // 
             this.tpBooks.Controls.Add(this.btnAddImportedGoodsToCart);
@@ -446,8 +521,36 @@
             this.tpBooks.Text = "Books";
             this.tpBooks.UseVisualStyleBackColor = true;
             // 
+            // btnAddImportedGoodsToCart
+            // 
+            this.btnAddImportedGoodsToCart.Location = new System.Drawing.Point(582, 28);
+            this.btnAddImportedGoodsToCart.Name = "btnAddImportedGoodsToCart";
+            this.btnAddImportedGoodsToCart.Size = new System.Drawing.Size(75, 23);
+            this.btnAddImportedGoodsToCart.TabIndex = 5;
+            this.btnAddImportedGoodsToCart.Text = "Add To Cart";
+            this.btnAddImportedGoodsToCart.UseVisualStyleBackColor = true;
+            this.btnAddImportedGoodsToCart.Click += new System.EventHandler(this.BtnAddBookToCart_Click);
+            // 
+            // lvBooks
+            // 
+            this.lvBooks.Location = new System.Drawing.Point(20, 30);
+            this.lvBooks.Name = "lvBooks";
+            this.lvBooks.Size = new System.Drawing.Size(516, 210);
+            this.lvBooks.TabIndex = 4;
+            this.lvBooks.UseCompatibleStateImageBehavior = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(19, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Select Products:";
+            // 
             // tpAdmin
             // 
+            this.tpAdmin.Controls.Add(this.cbUseRounding);
             this.tpAdmin.Controls.Add(this.groupBox1);
             this.tpAdmin.Location = new System.Drawing.Point(4, 22);
             this.tpAdmin.Name = "tpAdmin";
@@ -456,39 +559,6 @@
             this.tpAdmin.TabIndex = 4;
             this.tpAdmin.Text = "Admin";
             this.tpAdmin.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name:";
-            // 
-            // tbItemName
-            // 
-            this.tbItemName.Location = new System.Drawing.Point(70, 22);
-            this.tbItemName.Name = "tbItemName";
-            this.tbItemName.Size = new System.Drawing.Size(305, 20);
-            this.tbItemName.TabIndex = 1;
-            this.tbItemName.TextChanged += new System.EventHandler(this.TbItemName_TextChanged);
-            // 
-            // tbCost
-            // 
-            this.tbCost.Location = new System.Drawing.Point(70, 48);
-            this.tbCost.Name = "tbCost";
-            this.tbCost.Size = new System.Drawing.Size(305, 20);
-            this.tbCost.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Cost:";
             // 
             // groupBox1
             // 
@@ -502,160 +572,32 @@
             this.groupBox1.Controls.Add(this.tbItemName);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.tbCost);
-            this.groupBox1.Location = new System.Drawing.Point(21, 15);
+            this.groupBox1.Location = new System.Drawing.Point(23, 43);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(483, 131);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add|Edit Product";
             // 
-            // btnSave
+            // cbImported
             // 
-            this.btnSave.Location = new System.Drawing.Point(390, 22);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 8;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
+            this.cbImported.AutoSize = true;
+            this.cbImported.Location = new System.Drawing.Point(70, 98);
+            this.cbImported.Name = "cbImported";
+            this.cbImported.Size = new System.Drawing.Size(67, 17);
+            this.cbImported.TabIndex = 13;
+            this.cbImported.Text = "Imported";
+            this.cbImported.UseVisualStyleBackColor = true;
             // 
-            // lbSelectGM
+            // rbBooks
             // 
-            this.lbSelectGM.AutoSize = true;
-            this.lbSelectGM.Location = new System.Drawing.Point(21, 13);
-            this.lbSelectGM.Name = "lbSelectGM";
-            this.lbSelectGM.Size = new System.Drawing.Size(85, 13);
-            this.lbSelectGM.TabIndex = 0;
-            this.lbSelectGM.Text = "Select Products:";
-            // 
-            // lvGM
-            // 
-            this.lvGM.Location = new System.Drawing.Point(59, 29);
-            this.lvGM.MultiSelect = false;
-            this.lvGM.Name = "lvGM";
-            this.lvGM.Size = new System.Drawing.Size(345, 210);
-            this.lvGM.TabIndex = 1;
-            this.lvGM.UseCompatibleStateImageBehavior = false;
-            // 
-            // btnGMToCart
-            // 
-            this.btnGMToCart.Location = new System.Drawing.Point(431, 29);
-            this.btnGMToCart.Name = "btnGMToCart";
-            this.btnGMToCart.Size = new System.Drawing.Size(75, 23);
-            this.btnGMToCart.TabIndex = 2;
-            this.btnGMToCart.Text = "Add To Cart";
-            this.btnGMToCart.UseVisualStyleBackColor = true;
-            this.btnGMToCart.Click += new System.EventHandler(this.BtnGMToCart_Click);
-            // 
-            // btnAddFoodToCart
-            // 
-            this.btnAddFoodToCart.Location = new System.Drawing.Point(429, 40);
-            this.btnAddFoodToCart.Name = "btnAddFoodToCart";
-            this.btnAddFoodToCart.Size = new System.Drawing.Size(75, 23);
-            this.btnAddFoodToCart.TabIndex = 5;
-            this.btnAddFoodToCart.Text = "Add To Cart";
-            this.btnAddFoodToCart.UseVisualStyleBackColor = true;
-            this.btnAddFoodToCart.Click += new System.EventHandler(this.BtnAddFoodToCart_Click);
-            // 
-            // lvFood
-            // 
-            this.lvFood.Location = new System.Drawing.Point(47, 31);
-            this.lvFood.Name = "lvFood";
-            this.lvFood.Size = new System.Drawing.Size(345, 210);
-            this.lvFood.TabIndex = 4;
-            this.lvFood.UseCompatibleStateImageBehavior = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Select Products:";
-            // 
-            // btnAddMedicineToCart
-            // 
-            this.btnAddMedicineToCart.Location = new System.Drawing.Point(437, 28);
-            this.btnAddMedicineToCart.Name = "btnAddMedicineToCart";
-            this.btnAddMedicineToCart.Size = new System.Drawing.Size(75, 23);
-            this.btnAddMedicineToCart.TabIndex = 5;
-            this.btnAddMedicineToCart.Text = "Add To Cart";
-            this.btnAddMedicineToCart.UseVisualStyleBackColor = true;
-            this.btnAddMedicineToCart.Click += new System.EventHandler(this.BtnAddMedicineToCart_Click);
-            // 
-            // lvMedicine
-            // 
-            this.lvMedicine.Location = new System.Drawing.Point(48, 28);
-            this.lvMedicine.Name = "lvMedicine";
-            this.lvMedicine.Size = new System.Drawing.Size(345, 210);
-            this.lvMedicine.TabIndex = 4;
-            this.lvMedicine.UseCompatibleStateImageBehavior = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Select Products:";
-            // 
-            // btnAddImportedGoodsToCart
-            // 
-            this.btnAddImportedGoodsToCart.Location = new System.Drawing.Point(427, 28);
-            this.btnAddImportedGoodsToCart.Name = "btnAddImportedGoodsToCart";
-            this.btnAddImportedGoodsToCart.Size = new System.Drawing.Size(75, 23);
-            this.btnAddImportedGoodsToCart.TabIndex = 5;
-            this.btnAddImportedGoodsToCart.Text = "Add To Cart";
-            this.btnAddImportedGoodsToCart.UseVisualStyleBackColor = true;
-            this.btnAddImportedGoodsToCart.Click += new System.EventHandler(this.BtnAddImportedGoodsToCart_Click);
-            // 
-            // lvBooks
-            // 
-            this.lvBooks.Location = new System.Drawing.Point(50, 28);
-            this.lvBooks.Name = "lvBooks";
-            this.lvBooks.Size = new System.Drawing.Size(345, 210);
-            this.lvBooks.TabIndex = 4;
-            this.lvBooks.UseCompatibleStateImageBehavior = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Select Products:";
-            // 
-            // lvRegisterTape
-            // 
-            this.lvRegisterTape.Location = new System.Drawing.Point(21, 35);
-            this.lvRegisterTape.Name = "lvRegisterTape";
-            this.lvRegisterTape.Size = new System.Drawing.Size(309, 283);
-            this.lvRegisterTape.TabIndex = 0;
-            this.lvRegisterTape.UseCompatibleStateImageBehavior = false;
-            // 
-            // rbTaxable
-            // 
-            this.rbTaxable.AutoSize = true;
-            this.rbTaxable.Checked = true;
-            this.rbTaxable.Location = new System.Drawing.Point(70, 75);
-            this.rbTaxable.Name = "rbTaxable";
-            this.rbTaxable.Size = new System.Drawing.Size(63, 17);
-            this.rbTaxable.TabIndex = 9;
-            this.rbTaxable.Text = "Taxable";
-            this.rbTaxable.UseVisualStyleBackColor = true;
-            // 
-            // rbFood
-            // 
-            this.rbFood.AutoSize = true;
-            this.rbFood.Location = new System.Drawing.Point(151, 75);
-            this.rbFood.Name = "rbFood";
-            this.rbFood.Size = new System.Drawing.Size(49, 17);
-            this.rbFood.TabIndex = 10;
-            this.rbFood.Text = "Food";
-            this.rbFood.UseVisualStyleBackColor = true;
+            this.rbBooks.AutoSize = true;
+            this.rbBooks.Location = new System.Drawing.Point(286, 74);
+            this.rbBooks.Name = "rbBooks";
+            this.rbBooks.Size = new System.Drawing.Size(50, 17);
+            this.rbBooks.TabIndex = 12;
+            this.rbBooks.Text = "Book";
+            this.rbBooks.UseVisualStyleBackColor = true;
             // 
             // rbMedical
             // 
@@ -667,15 +609,143 @@
             this.rbMedical.Text = "Medical";
             this.rbMedical.UseVisualStyleBackColor = true;
             // 
-            // rbBooks
+            // rbFood
             // 
-            this.rbBooks.AutoSize = true;
-            this.rbBooks.Location = new System.Drawing.Point(286, 74);
-            this.rbBooks.Name = "rbBooks";
-            this.rbBooks.Size = new System.Drawing.Size(50, 17);
-            this.rbBooks.TabIndex = 12;
-            this.rbBooks.Text = "Book";
-            this.rbBooks.UseVisualStyleBackColor = true;
+            this.rbFood.AutoSize = true;
+            this.rbFood.Location = new System.Drawing.Point(151, 75);
+            this.rbFood.Name = "rbFood";
+            this.rbFood.Size = new System.Drawing.Size(49, 17);
+            this.rbFood.TabIndex = 10;
+            this.rbFood.Text = "Food";
+            this.rbFood.UseVisualStyleBackColor = true;
+            // 
+            // rbTaxable
+            // 
+            this.rbTaxable.AutoSize = true;
+            this.rbTaxable.Checked = true;
+            this.rbTaxable.Location = new System.Drawing.Point(70, 75);
+            this.rbTaxable.Name = "rbTaxable";
+            this.rbTaxable.Size = new System.Drawing.Size(63, 17);
+            this.rbTaxable.TabIndex = 9;
+            this.rbTaxable.TabStop = true;
+            this.rbTaxable.Text = "Taxable";
+            this.rbTaxable.UseVisualStyleBackColor = true;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(390, 22);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(26, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Name:";
+            // 
+            // tbItemName
+            // 
+            this.tbItemName.Location = new System.Drawing.Point(70, 22);
+            this.tbItemName.MaxLength = 50;
+            this.tbItemName.Name = "tbItemName";
+            this.tbItemName.Size = new System.Drawing.Size(305, 20);
+            this.tbItemName.TabIndex = 1;
+            this.tbItemName.TextChanged += new System.EventHandler(this.TbItemName_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(26, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Cost:";
+            // 
+            // tbCost
+            // 
+            this.tbCost.Location = new System.Drawing.Point(70, 48);
+            this.tbCost.MaxLength = 10;
+            this.tbCost.Name = "tbCost";
+            this.tbCost.Size = new System.Drawing.Size(305, 20);
+            this.tbCost.TabIndex = 3;
+            // 
+            // gbRegisterOutput
+            // 
+            this.gbRegisterOutput.Controls.Add(this.btnClear);
+            this.gbRegisterOutput.Controls.Add(this.lbTotalValue);
+            this.gbRegisterOutput.Controls.Add(this.lbSalesTaxValue);
+            this.gbRegisterOutput.Controls.Add(this.label7);
+            this.gbRegisterOutput.Controls.Add(this.lbSalesTax);
+            this.gbRegisterOutput.Controls.Add(this.lvRegisterTape);
+            this.gbRegisterOutput.Location = new System.Drawing.Point(802, 27);
+            this.gbRegisterOutput.Name = "gbRegisterOutput";
+            this.gbRegisterOutput.Size = new System.Drawing.Size(511, 384);
+            this.gbRegisterOutput.TabIndex = 3;
+            this.gbRegisterOutput.TabStop = false;
+            this.gbRegisterOutput.Text = "Register Tape";
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(232, 342);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(97, 24);
+            this.btnClear.TabIndex = 5;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
+            // 
+            // lbTotalValue
+            // 
+            this.lbTotalValue.AutoSize = true;
+            this.lbTotalValue.Location = new System.Drawing.Point(106, 354);
+            this.lbTotalValue.Name = "lbTotalValue";
+            this.lbTotalValue.Size = new System.Drawing.Size(13, 13);
+            this.lbTotalValue.TabIndex = 4;
+            this.lbTotalValue.Text = "0";
+            this.lbTotalValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbSalesTaxValue
+            // 
+            this.lbSalesTaxValue.AutoSize = true;
+            this.lbSalesTaxValue.Location = new System.Drawing.Point(106, 332);
+            this.lbSalesTaxValue.Name = "lbSalesTaxValue";
+            this.lbSalesTaxValue.Size = new System.Drawing.Size(13, 13);
+            this.lbSalesTaxValue.TabIndex = 3;
+            this.lbSalesTaxValue.Text = "0";
+            this.lbSalesTaxValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(36, 354);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Total:";
+            // 
+            // lbSalesTax
+            // 
+            this.lbSalesTax.AutoSize = true;
+            this.lbSalesTax.Location = new System.Drawing.Point(36, 332);
+            this.lbSalesTax.Name = "lbSalesTax";
+            this.lbSalesTax.Size = new System.Drawing.Size(57, 13);
+            this.lbSalesTax.TabIndex = 1;
+            this.lbSalesTax.Text = "Sales Tax:";
+            // 
+            // lvRegisterTape
+            // 
+            this.lvRegisterTape.Location = new System.Drawing.Point(21, 35);
+            this.lvRegisterTape.Name = "lvRegisterTape";
+            this.lvRegisterTape.Size = new System.Drawing.Size(445, 283);
+            this.lvRegisterTape.TabIndex = 0;
+            this.lvRegisterTape.UseCompatibleStateImageBehavior = false;
             // 
             // cmsGM
             // 
@@ -690,68 +760,16 @@
             this.purchaseItemToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.purchaseItemToolStripMenuItem.Text = "Purchase Item";
             // 
-            // cbImported
+            // cbUseRounding
             // 
-            this.cbImported.AutoSize = true;
-            this.cbImported.Location = new System.Drawing.Point(70, 98);
-            this.cbImported.Name = "cbImported";
-            this.cbImported.Size = new System.Drawing.Size(67, 17);
-            this.cbImported.TabIndex = 13;
-            this.cbImported.Text = "Imported";
-            this.cbImported.UseVisualStyleBackColor = true;
-            // 
-            // testingRoundingToolStripMenuItem
-            // 
-            this.testingRoundingToolStripMenuItem.Name = "testingRoundingToolStripMenuItem";
-            this.testingRoundingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.testingRoundingToolStripMenuItem.Text = "testing rounding";
-            this.testingRoundingToolStripMenuItem.Click += new System.EventHandler(this.TestingRoundingToolStripMenuItem_Click);
-            // 
-            // lbSalesTax
-            // 
-            this.lbSalesTax.AutoSize = true;
-            this.lbSalesTax.Location = new System.Drawing.Point(36, 332);
-            this.lbSalesTax.Name = "lbSalesTax";
-            this.lbSalesTax.Size = new System.Drawing.Size(57, 13);
-            this.lbSalesTax.TabIndex = 1;
-            this.lbSalesTax.Text = "Sales Tax:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(36, 354);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Total:";
-            // 
-            // lbSalesTaxValue
-            // 
-            this.lbSalesTaxValue.AutoSize = true;
-            this.lbSalesTaxValue.Location = new System.Drawing.Point(106, 332);
-            this.lbSalesTaxValue.Name = "lbSalesTaxValue";
-            this.lbSalesTaxValue.Size = new System.Drawing.Size(13, 13);
-            this.lbSalesTaxValue.TabIndex = 3;
-            this.lbSalesTaxValue.Text = "0";
-            // 
-            // lbTotalValue
-            // 
-            this.lbTotalValue.AutoSize = true;
-            this.lbTotalValue.Location = new System.Drawing.Point(106, 354);
-            this.lbTotalValue.Name = "lbTotalValue";
-            this.lbTotalValue.Size = new System.Drawing.Size(13, 13);
-            this.lbTotalValue.TabIndex = 4;
-            this.lbTotalValue.Text = "0";
-            // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(232, 342);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(97, 24);
-            this.btnClear.TabIndex = 5;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
+            this.cbUseRounding.AutoSize = true;
+            this.cbUseRounding.Location = new System.Drawing.Point(34, 20);
+            this.cbUseRounding.Name = "cbUseRounding";
+            this.cbUseRounding.Size = new System.Drawing.Size(94, 17);
+            this.cbUseRounding.TabIndex = 9;
+            this.cbUseRounding.Text = "Use Rounding";
+            this.cbUseRounding.UseVisualStyleBackColor = true;
+            this.cbUseRounding.CheckedChanged += new System.EventHandler(this.cbUseRounding_CheckedChanged);
             // 
             // Form1
             // 
@@ -764,7 +782,7 @@
             this.Controls.Add(this.tcMain);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "DealerOn Lobby Gift Shop";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.cashRegisterStatusStrip.ResumeLayout(false);
@@ -774,15 +792,16 @@
             this.tpGeneralMerchandise.PerformLayout();
             this.tpFood.ResumeLayout(false);
             this.tpFood.PerformLayout();
-            this.gbRegisterOutput.ResumeLayout(false);
-            this.gbRegisterOutput.PerformLayout();
             this.tpMedical.ResumeLayout(false);
             this.tpMedical.PerformLayout();
             this.tpBooks.ResumeLayout(false);
             this.tpBooks.PerformLayout();
             this.tpAdmin.ResumeLayout(false);
+            this.tpAdmin.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.gbRegisterOutput.ResumeLayout(false);
+            this.gbRegisterOutput.PerformLayout();
             this.cmsGM.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -862,6 +881,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbSalesTax;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.CheckBox cbUseRounding;
     }
 }
 
